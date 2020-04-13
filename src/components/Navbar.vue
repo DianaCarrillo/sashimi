@@ -1,9 +1,13 @@
 <template>
-    <nav class="w-screen shadow-2xl bg-red-700 text-white">
-      <!-- <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link> |
-      <router-link to="/another">Another Page</router-link> -->
-      <h1>Navbar</h1>
+    <nav class="bg-transparent flex w-full p-1 text-2xl">
+        <router-link class="px-2" to="/">sashimi</router-link>  
+      <div class="ml-auto">
+        <router-link class="px-2" to="/about">about </router-link>  
+        <router-link class="px-2" to="/projects">projects </router-link>  
+        <router-link class="px-2" to="/art">art </router-link>  
+        <router-link class="px-2" to="/contact">contact </router-link>
+      </div>
+
     </nav>
 </template>
 

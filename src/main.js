@@ -11,7 +11,7 @@ Vue.use(VueMq, {
     mo: 768,
     de: Infinity,
   },
-  defaultBreakpoint: "mo" // customize this for SSR
+  defaultBreakpoint: "mo", // customize this for SSR
 })
 
 new Vue({
