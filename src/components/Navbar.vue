@@ -1,11 +1,26 @@
+<script>
+export default {
+  name: 'Navbar',
+  data() {
+    return {
+      hover: false,
+    };
+  }
+}
+</script>
+
 <template>
-    <nav class="bg-transparent flex w-full p-1 text-2xl">
-        <router-link class="px-2" to="/">sashimi</router-link>  
-      <div class="ml-auto">
-        <router-link class="px-2" to="/about">about </router-link>  
-        <router-link class="px-2" to="/projects">projects </router-link>  
-        <router-link class="px-2" to="/art">art </router-link>  
-        <router-link class="px-2" to="/contact">contact </router-link>
+    <nav class="flex w-full p-1 text-lg p-4 px-8 fixed">
+      <!-- <div @mouseover="hover = true" @mouseleave="hover = false"> -->
+        <!-- <router-link v-if="hover" class="px-2 text-sa-blue font-bold" to="/">me</router-link>          -->
+        <router-link    class="px-2 text-sa-blue font-bold" to="/">sashimi</router-link>  
+      <!-- </div> -->
+      
+      <div class="ml-auto text-primary">
+        <router-link class="px-2 hover:text-secondary" to="/about">about </router-link>  
+        <router-link class="px-2 hover:text-secondary" to="/projects">projects </router-link>  
+        <router-link class="px-2 hover:text-secondary" to="/art">art </router-link>  
+        <router-link class="px-2 hover:text-secondary" to="/contact">contact </router-link>
       </div>
 
     </nav>
