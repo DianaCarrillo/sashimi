@@ -10,7 +10,7 @@ export default {
 </script>
 
 <template>
-    <nav class="flex w-full p-1 text-lg p-4 px-8 fixed">
+    <nav class="flex w-full p-1 text-lg p-1 px-8 fixed bg-sa-yellow z-10">
       <!-- <div @mouseover="hover = true" @mouseleave="hover = false"> -->
         <!-- <router-link v-if="hover" class="px-2 text-sa-blue font-bold" to="/">me</router-link>          -->
         <router-link    class="px-2 text-sa-blue font-bold" to="/">sashimi</router-link>  
