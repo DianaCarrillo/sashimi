@@ -1,10 +1,10 @@
 <template>
- <section class="p-16 border border-black mx-64 text-3xl" >
-      <h3>I am a social psychologist. That means:</h3>
+ <section class="items-center flex flex-col justify-center flex-grow text-4xl mx-64 text-center h-screen" >
+      <h3>¡Soy psicóloga social!</h3>
       <ul>
-        <li>I'm a good observer and listener</li>
-        <li>I care about social issues</li>
-        <li>I understand human problematics with a social -non biological- point of view</li>
+        <li>Sé observar y escuchar para mejorar la comunicación y los problemas en mis equipos</li>
+        <li>Le doy importancia a los problemas culturales y sociales de mi país </li>
+        <li>Tengo interés por hacer algún beneficio a mis entonos sociales., desde mi casa hasta mi trabajo. </li>
       </ul>
   </section>
 </template>

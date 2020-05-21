@@ -1,9 +1,9 @@
 <script>
 // import BioButton from "../components/BioButton.vue";
-import Psychologist from "./interests/Psychologist.vue";
-import Developer from "./interests/Developer.vue";
-import Feminist from "./interests/Feminist.vue";
-// import CatLover from "./interests/CatLover.vue";
+// import Psychologist from "./interests/Psychologist.vue";
+// import Developer from "./interests/Developer.vue";
+// import Feminist from "./interests/Feminist.vue";
+import Hi from "./interests/Hi.vue";
 // import Mountains from "../views/Mountains.vue";
 import Description from "../views/Description.vue";
 
@@ -22,30 +22,25 @@ import Description from "../views/Description.vue";
           Description,
           // BioButton,
           // Mountains,
-          Psychologist,
-          Developer,
-          Feminist,
+          // Psychologist,
+          // Developer,
+          // Feminist,
+          Hi
           // CatLover
         }
     }
 </script>
 <template>
-<div class="h-screen flex whitespace-no-wrap p-24  px-auto overflow-x-scroll">
-  <div class=" flex">
+<!-- h-screen flex whitespace-no-wrap p-24  px-auto -->
+<div class=" overflow-x-scroll horizontal-scroll-wrapper">
+  <!-- <div :class="{'flex-col': mq === 'mo'}" class="flex justify-between"> -->
    <Description />
-   <Developer />
-       <div class="flex flex-col w-full">
-    <div class="bg-sa-yellow w-full z-0 p-8"> </div>
+   <!-- <Developer /> -->
+  <!-- <Feminist /> -->
+   <!-- <Psychologist/> -->
+   <Hi/>
   </div>
-  <Feminist />
-   <Psychologist/>
-    <section class="items-center flex flex-col justify-center flex-grow text-6xl p-64 pl-16 mx-64 text-center" >
-      <p >Bienvenide<br/> mi nombre es</p>
-      <h1 class="text-sa-blue sashimi">sashimi</h1>
-      <p class="text-lg">Con <span class="text-sa-blue sashimi">01110011</span> minúscula</p>
-  </section>
-  </div>
-</div>
+<!-- </div> -->
 
 </template>
 
@@ -53,11 +48,12 @@ import Description from "../views/Description.vue";
 .sa-font{
   font-size:300px;
 }
-.sashimi{
-  /* text-shadow: #C4DAFE 1px 0 5px; */
-}
-.feminism{
-  filter: grayscale(100%)
-  /* background-image: url(../assets/IMG_20200308_170320_BURST20.jpg) */
+horizontal-scroll-wrapper {
+  width: 100px;
+  height: 300px;
+  overflow-y: auto;
+  overflow-x: hidden;
+    transform: rotate(-90deg);
+  transform-origin: right top;
 }
 </style>
