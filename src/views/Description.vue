@@ -1,8 +1,9 @@
 <template>
-    <section  class="items-center flex flex-col justify-center flex-grow text-6xl font-bold bg-black h-screen text-primary bg-sa bg-cover bg-repeat"   >
-        <h1 class="p-2">PROGRAMADORA</h1>
-        <h1 class="p-2">PSICÓLOGA SOCIAL</h1>
-        <h1 class="p-2">FEMINISTA</h1>
+    <section :class="{' justify-center items-center text-6xl ': $mq === 'de'}" class=" text-4xl flex flex-col flex-grow  bg-black h-screen text-primary p-4" >
+        <p class="">¡Hola!</p>
+        <p class="">Mi nombre es Diana</p>
+        <h1 class="text-sa-yellow font-bold zoom">sashimi</h1>
+        <p class="">Bienvenidx a mi portafolio</p>
     </section>
 </template>
 
@@ -18,8 +19,17 @@
 // background: rgb(255,0,76);
 // background: linear-gradient(0deg, rgba(255,0,76,1) 1%, rgba(0,0,0,1) 100%);
 }
+p {
+  transition: 700ms ease;
+ }
+
 h1{
-  transition: 400ms ease;
+  transition: 700ms ease;
+
+}
+ h1:hover{
+  transition: 700ms ease;
+   font-size:150%;
  }
 // section:hover{
 //    animation: colorchange 1s infinite;
@@ -37,7 +47,7 @@ h1{
       0%   {background: red;}
       100%  {background: yellow;}
     }
-h1:hover {
+p:hover {
   transition: 200ms ease;
   color: #fff;
   animation: glow 2s ease-in-out  infinite alternate-reverse;

@@ -2,7 +2,7 @@ module.exports = {
   theme: {
    textColor: theme => theme('colors'),
      textColor: {
-      'primary': '#ff004c',
+      'primary': '#ff0080',
       'secondary': '#fbc8d4',
       'sa-yellow': '#eefa00',
       'sa-blue': '#1d00ff',

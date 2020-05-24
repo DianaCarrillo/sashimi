@@ -1,10 +1,11 @@
 <template>
-    <section class="items-center  flex flex-col justify-center flex-grow text-5xl font-bold px-64 text-center h-screen bg-primary cover" style="background-image:url('./feminismo.jpg');"  >
-      <h1 class=" sashimi">¡Hola!</h1>
-      <h1 class=" sashimi ">Yo soy</h1>
-      <h1 class=" sashimi text-6xl">sashimi (con 01110011 minúscula)</h1>
-      <!-- <p class="text-lg">Con <span class="text-sa-blue sashimi">01111011</span> minúscula</p> -->
-      
+    <section class=" flex flex-col justify-center flex-grow text-xl font-bold  h-screen bg-black cover"  >
+       <!-- <p class="text-lg">Con <span class="text-sa-blue sashimi">01111011</span> minúscula</p>  -->
+      <div class="flex items-center bg-black p-16 w-1/2">
+        <p class=" pr-4 font-bold text-primary">Soy Programadora Front-end y licenciada en Psicología social. Mi camino como dev comenzó en Laboratoria donde aprendí JavaScript y posteriormente trabajé por un año en Eleva en la aplicación web app.chain.inc donde aprendí Vue. </p> 
+        <img class="circle rounded-full w-64 feminism z-0"  src="../../assets/dianasash.jpg" alt="">      
+      </div>
+       <!-- <p>:)</p>    -->
   </section>
 </template>
 
@@ -15,6 +16,13 @@
 </script>
 
 <style lang="scss" scoped>
+img {
+ box-shadow: 8px 8px 50px  #1d00ff;
+}
+section{
+    background-image: url('../../assets/psi.jpg');
+    background-repeat: repeat
+}
 // .sashimi{
 
 //   color: #fff;
