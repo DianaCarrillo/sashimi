@@ -4,7 +4,8 @@
 // import Developer from "./interests/Developer.vue";
 // import Feminist from "./interests/Feminist.vue";
 import Hi from "./interests/Hi.vue";
-// import Mountains from "../views/Mountains.vue";
+// import Contact from "../views/Mountains.vue";
+import Contact from "./Contact.vue";
 import Description from "../views/Description.vue";
 
     export default {
@@ -20,6 +21,7 @@ import Description from "../views/Description.vue";
         },
         components: {
           Description,
+          Contact,
           // BioButton,
           // Mountains,
           // Psychologist,
@@ -39,6 +41,7 @@ import Description from "../views/Description.vue";
   <!-- <Feminist /> -->
    <!-- <Psychologist/> -->
    <Hi/>
+   <Contact />
   </div>
 <!-- </div> -->
 
