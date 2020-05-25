@@ -19,7 +19,7 @@
 </script>
 <template>
     <div class="pb-8">
-        <p class=" justify-center w-full flex text-lg text-sa-yellow">{{site}} </p>
+        <p class=" justify-center w-full flex text-lg text-primary">{{site}} </p>
         <a :href="href" target="_blank" class="flex items-center justify-center"><span class="pt-2">{{linkString}}</span></a>
     </div>
 </template>

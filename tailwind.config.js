@@ -10,7 +10,7 @@ module.exports = {
          },
          backgroundColor: theme => ({
      ...theme('colors'),
-     'primary': '#ff004c',
+     'primary': '#ff0080',
      'secondary': '#fbc8d4',
      'sa-yellow': '#eefa00',
      'sa-blue': '#1d00ff',

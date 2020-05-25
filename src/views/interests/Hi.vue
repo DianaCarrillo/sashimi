@@ -1,9 +1,15 @@
 <template>
     <section class=" flex flex-col justify-center flex-grow text-xl font-bold  h-screen bg-black cover"  >
        <!-- <p class="text-lg">Con <span class="text-sa-blue sashimi">01111011</span> minúscula</p>  -->
-      <div class="flex items-center bg-black p-16 w-1/2">
-        <p class=" pr-4 font-bold text-primary">Soy Programadora Front-end y licenciada en Psicología social. Mi camino como dev comenzó en Laboratoria donde aprendí JavaScript y posteriormente trabajé por un año en Eleva en la aplicación web app.chain.inc donde aprendí Vue. </p> 
-        <img class="circle rounded-full w-64 feminism z-0"  src="../../assets/dianasash.jpg" alt="">      
+      <div class="flex items-center w-1/2 bg-opacity" :class="{'flex-col w-full': $mq === 'mo', 'p-16': $mq === 'de' }">
+       <div v-if="$mq === 'de'">
+         <p class=" pr-4 font-bold text-primary pb-8">Soy Programadora Front-end y licenciada en Psicología social. Mi camino como dev comenzó en Laboratoria donde aprendí a trabajar con JavaScript, node, CSS, Firebase, APIs y conceptos básicos de UX. <br> Posteriormente trabajé por un año con Eleva en app.chain.inc donde programaba con VUE y realizaba email development para comunicación interna y de la aplicación  </p> <a  href="./diana-cv.pdf" download="diana-cv.pdf" target="_blank" class="font-bold text-sa-yellow bg-primary p-2 rounded-lg hover:bg-sa-yellow">Descarga mi C.V</a>
+        </div>
+        <div v-else>
+             <p class=" pr-4 font-bold text-primary text-lg pb-8 p-8">Soy Programadora Front-end y licenciada en Psicología social. Mi camino como dev comenzó en Laboratoria donde aprendí a trabajar con JavaScript, node, CSS, Firebase, APIs y conceptos básicos de UX. <br> Posteriormente trabajé por un año con Eleva en app.chain.inc donde programaba con VUE y realizaba email development para comunicación interna y de la aplicación  </p> 
+        </div>
+
+        <img class="circle rounded-full w-64 feminism z-0"  :class="{'w-32': $mq === 'mo'}"  src="../../assets/dianasash.jpg" alt="">      
       </div>
        <!-- <p>:)</p>    -->
   </section>
@@ -17,11 +23,18 @@
 
 <style lang="scss" scoped>
 img {
- box-shadow: 8px 8px 50px  #1d00ff;
+ box-shadow: 8px 8px 50px  #eefa00;
 }
 section{
-    background-image: url('../../assets/psi.jpg');
-    background-repeat: repeat
+    background-image: url('../../assets/atardecer.jpg');
+    background-size: cover;
+}
+
+.bg-opacity{
+  background: rgba(25, 25, 25, .5);
+}
+a:hover{
+    color: #ff0080;
 }
 // .sashimi{
 
