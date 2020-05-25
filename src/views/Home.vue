@@ -34,7 +34,7 @@ import Description from "../views/Description.vue";
 </script>
 <template>
 <!-- h-screen flex whitespace-no-wrap p-24  px-auto -->
-<div class=" overflow-x-scroll horizontal-scroll-wrapper">
+<div class="  horizontal-scroll-wrapper">
   <!-- <div :class="{'flex-col': mq === 'mo'}" class="flex justify-between"> -->
    <Description />
    <!-- <Developer /> -->
@@ -51,12 +51,12 @@ import Description from "../views/Description.vue";
 .sa-font{
   font-size:300px;
 }
-horizontal-scroll-wrapper {
+/* horizontal-scroll-wrapper {
   width: 100px;
   height: 300px;
   overflow-y: auto;
   overflow-x: hidden;
     transform: rotate(-90deg);
   transform-origin: right top;
-}
+} */
 </style>

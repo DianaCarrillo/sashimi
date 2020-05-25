@@ -1,17 +1,11 @@
 <template>
 <div>
     <div v-if="$mq==='de'" class="h-screen flex flex-col justify-around bg-black text-xl">
-        <p class=" w-full flex text-2xl text-primary font-bold">
-           contacto
-        </p>
         <section  class="flex flex-col justify-center items-center text-center flex-grow text-sa-yellow font-bold">
              <ContactLink v-for="link in links" :key="link.site" :href="link.href" :linkString="link.linkString" :site="link.site" /> 
         </section>
     </div>
         <div v-else class="h-screen flex flex-col bg-black p-4">
-            <p class=" w-full flex text-2xl text-primary font-bold">
-                contacto
-            </p>
             <section  class="flex flex-col justify-center items-center text-center flex-grow text-sa-yellow font-bold">
                <ContactLink v-for="link in links" :key="link.site" :href="link.href" :linkString="link.linkString" :site="link.site" /> 
             </section>
