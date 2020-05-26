@@ -20,7 +20,7 @@
 <template>
     <div class="pb-8">
         <p class=" justify-center w-full flex text-lg text-sa-yellow">{{site}} </p>
-        <a :href="href" target="_blank" class="flex items-center justify-center text-primary"><span class="pt-2">{{linkString}}</span></a>
+        <a :href="href" target="_blank" class="flex items-center justify-center text-primary hover:text-secondary"><span class="pt-2">{{linkString}}</span></a>
     </div>
 </template>
 <style lang="scss" scoped>

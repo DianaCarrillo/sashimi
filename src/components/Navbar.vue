@@ -1,4 +1,6 @@
 <script>
+import BioButton from '../components/BioButton'
+
 export default {
   name: 'Navbar',
   data() {
@@ -7,6 +9,9 @@ export default {
       email: false,
       about: false,      
     };
+  },
+  components:{
+    BioButton,
   }
 }
 </script>
@@ -16,7 +21,7 @@ export default {
     <router-link    class="px-4 text-sa-yellow font-bold sashimi" to="/">sashimi</router-link>  
       
       <div class="ml-auto text-primary flex" >
-         <a  href="./diana-cv.pdf" download="diana-cv.pdf" target="_blank" class="font-bold text-sa-yellow bg-primary px-2 rounded-lg hover:bg-sa-yellow">Ir a mi C.V</a>
+                <BioButton href="https://drive.google.com/file/d/1FraRYkixphpWpPttBiAUUMA6HnBzgDoG/view?usp=sharing" label="Ir a mi C.V" />
           <!-- <router-link  class="px-2 hover:text-sa-yellow flex items-center" to="/about">
             <span class="material-icons" >sentiment_satisfied_alt</span>
           </router-link>
