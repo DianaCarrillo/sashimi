@@ -32,8 +32,8 @@
             <img v-if="$mq==='de'" src="../assets/foodmap.png" alt="">
             <p v-if="$mq==='de'" class="text-secondary pt-8 text-center box"> Buscador de restaurantes consumiendo Google Maps API. Desarrollado con with vanilla JS.</p>
             <div class="flex text-primary pt-8 justify-center">
-                <BioButton href="https://github.com/DianaCarrillo/cdmx-2018-06-bc-core-pm-foodmap" label="DEMO" />
-                <BioButton href="https://dianacarrillo.github.io/cdmx-2018-06-bc-core-pm-foodmap/src/views/view1.html" label="CODE" />
+                <BioButton href="https://github.com/DianaCarrillo/cdmx-2018-06-bc-core-pm-foodmap" label="CODE" />
+                <BioButton href="https://dianacarrillo.github.io/cdmx-2018-06-bc-core-pm-foodmap/src/views/view1.html" label="DEMO" />
             </div>
         
         </div>
