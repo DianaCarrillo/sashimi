@@ -1,12 +1,12 @@
 <template>
-  <div id="app">
+  <div id="app" class="overflow-hidden">
     <Navbar />
     <router-view />
   </div>
 </template>
 
 <script>
-import Navbar from "./components/Navbar.vue" 
+import Navbar from "./components/Navbar.vue"; 
     export default {
     name: "App",
     components: {
