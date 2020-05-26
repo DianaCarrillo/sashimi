@@ -1,36 +1,34 @@
 <template>
-    <div class="flex justify-center px-4 ">
-        <div class="w-1/2 flex flex-col mr-2 text-left ">
-            <button class="flex items-center justify-between p-2 text-lg  text-sa-yellow " @click="showTech = !showTech"> Tech Skills <span class="material-icons">
-                expand_more
+    <div class="flex items-center justify-center h-screen p-8  bg-primary" :class="{'flex-col text-lg': $mq === 'mo', 'text-lg': $mq === 'de'}">
+        <div class="w-1/3 flex flex-col bg-black text-left  rounded-lg box-shadow" :class="{'flex-col w-full m-0 mb-8 p-2': $mq === 'mo' , 'mr-16 p-8': $mq === 'de'}">
+            <P class="flex items-center p-2 text-sa-yellow font-bold" :class="{'text-2xl': $mq === 'de'}" >Tech Skills <span class="material-icons px-4">
+                code
                 </span>
-            </button>
-            <transition name="fade">
-            <ul v-if="showTech" class="p-4">
+            </P>
+            <ul class="text-secondary text-center p-4  " >
                 <li>JavaScript</li>
+                <li>HTML</li>
+                <li>CSS </li>
                 <li>Vue</li>
                 <li>Tailwind</li>
-                <li>Metodología Agile</li>
-                <li>Active Campaign</li>
+                <li>Storybook</li>
                 <li>Sendgrid</li>
             </ul>
-            </transition>
         </div>
-        <div class="w-1/2 flex flex-col ml-2 text-left ">
-            <button class="flex items-center justify-between p-2 text-lg   text-sa-yellow " @click="showSoft = !showSoft">Soft Skills  <span class="material-icons">
-                expand_more
+        <div class="w-1/3 flex flex-col  text-left bg-black rounded-lg box-shadow" :class="{'flex-col w-full p-2': $mq === 'mo' , 'ml-16 p-8': $mq === 'de'}">
+            <P class="flex items-center p-2  text-sa-yellow font-bold" :class="{'text-2xl': $mq === 'de'}">Soft Skills  <span class="material-icons px-4">
+                people
                 </span>
-            </button>
-            <transition name="fade">
-            <ul v-if="showSoft" class="p-4">
-                 <li>Comunicación acertiva</li>
+            </P>
+            <ul class="text-secondary text-center p-4" >
+                <li>Metodología Agile</li>
+                 <li>Acertividad</li>
                  <li>Trabajo en equipo</li>
-                 <li>Capacidad de liderazgo</li>
-                 <li></li>
-                 <li></li>
+                 <li>Liderazgo</li>
+                 <li>Escucha</li>
+                 <li>Observasión</li>
+                 <li>Creatividad</li>
             </ul>
-            </transition>
-
         </div>
     </div>
 </template>
@@ -56,5 +54,10 @@
 }
 .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
   opacity: 0;
+}
+.box-shadow{
+-webkit-box-shadow: 0px 23px 45px -9px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 23px 45px -9px rgba(0,0,0,0.75);
+box-shadow: 0px 23px 45px -9px rgba(0,0,0,0.75);
 }
 </style>

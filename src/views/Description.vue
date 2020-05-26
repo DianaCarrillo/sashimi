@@ -1,9 +1,8 @@
 <template>
     <section :class="{' justify-center items-center text-6xl ': $mq === 'de'}" class=" text-4xl flex flex-col flex-grow  bg-black h-screen text-primary p-4" >
-        <p class="">¡Hola!</p>
-        <p class="">Mi nombre es Diana</p>
+  
         <h1 class="text-sa-yellow font-bold zoom">sashimi</h1>
-        <p class="">Bienvenidx a mi portafolio</p>
+        <p class=" text-4xl">Front-end developer</p>
     </section>
 </template>
 

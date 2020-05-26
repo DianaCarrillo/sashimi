@@ -4,7 +4,7 @@
 // import Developer from "./interests/Developer.vue";
 // import Feminist from "./interests/Feminist.vue";
 import Hi from "./interests/Hi.vue";
-// import Contact from "../views/Mountains.vue";
+import Skills from "../views/Skills.vue";
 import Contact from "./Contact.vue";
 import Description from "../views/Description.vue";
 
@@ -27,8 +27,8 @@ import Description from "../views/Description.vue";
           // Psychologist,
           // Developer,
           // Feminist,
-          Hi
-          // CatLover
+          Hi,
+          Skills
         }
     }
 </script>
@@ -41,6 +41,7 @@ import Description from "../views/Description.vue";
   <!-- <Feminist /> -->
    <!-- <Psychologist/> -->
    <Hi/>
+   <Skills/>
    <Contact />
   </div>
 <!-- </div> -->

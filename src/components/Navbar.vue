@@ -12,11 +12,12 @@ export default {
 </script>
 
 <template>
-    <nav v-if="$mq === 'de'" class="flex w-full p-1 text-2xl p-4 px-8 fixed bg-black z-10 items-center">
-    <router-link    class="px-2 text-sa-yellow font-bold sashimi" to="/">sashimi</router-link>  
+    <nav v-if="$mq === 'de'" class="flex w-full p-2 text-lg px-8 fixed bg-black z-10 items-center">
+    <router-link    class="px-4 text-sa-yellow font-bold sashimi" to="/">sashimi</router-link>  
       
       <div class="ml-auto text-primary flex" >
-          <router-link  class="px-2 hover:text-sa-yellow flex items-center" to="/about">
+         <a  href="./diana-cv.pdf" download="diana-cv.pdf" target="_blank" class="font-bold text-sa-yellow bg-primary px-2 rounded-lg hover:bg-sa-yellow">Ir a mi C.V</a>
+          <!-- <router-link  class="px-2 hover:text-sa-yellow flex items-center" to="/about">
             <span class="material-icons" >sentiment_satisfied_alt</span>
           </router-link>
           <router-link  class="px-2 hover:text-sa-yellow flex items-center" to="/projects">
@@ -24,7 +25,7 @@ export default {
           </router-link>
           <router-link  class="px-2 hover:text-sa-yellow flex items-center" to="/contact">
             <span class="material-icons" >alternate_email</span>
-          </router-link>
+          </router-link> -->
       </div>
     </nav>
 </template>
