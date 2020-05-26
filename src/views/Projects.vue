@@ -1,36 +1,36 @@
 <template>
-    <div class="flex items-center justify-center h-screen p-8  bg-sa-yellow" :class="{'flex-col text-lg': $mq === 'mo', 'text-lg': $mq === 'de'}">
+    <div class="flex items-center justify-center h-screen p-8  bg-sa-yellow" :class="{'flex-col text-lg justify-between': $mq === 'mo', 'text-lg': $mq === 'de'}">
         <div class="w-1/3 flex flex-col bg-black text-left  rounded-lg box-shadow" :class="{'flex-col w-full m-0 mb-8 p-2': $mq === 'mo' , 'mr-16 p-8': $mq === 'de'}">
-            <p class="flex items-center p-2  text-sa-yellow font-bold" :class="{'text-2xl': $mq === 'de'}" >Registro de visitantes <span class="material-icons px-4">
+            <p class="flex items-center pb-4  text-sa-yellow font-bold" :class="{'text-2xl': $mq === 'de'}" >Registro de visitantes <span class="material-icons px-4">
                recent_actors
                 </span>
             </p>
-            <img src="../assets/terminal1.png" alt="">
-            <p class="text-secondary pt-8 text-center">Registro de vistantes del co-working "Terminal 1". Desarrollado con vanilla JS, Cloud Firestore and Formspree.</p>
+            <img v-if="$mq==='de'" src="../assets/terminal1.png" alt="">
+            <p v-if="$mq==='de'" class="text-secondary pt-8 text-center">Registro de vistantes del co-working "Terminal 1". Desarrollado con vanilla JS, Cloud Firestore and Formspree.</p>
             <div class="flex text-primary pt-8 justify-center">
                 <BioButton href="https://github.com/DianaCarrillo/cdmx-2018-06-am-bc-registro-de-visitantes" label="CODE" />
                 <BioButton href="https://dianacarrillo.github.io/cdmx-2018-06-am-bc-registro-de-visitantes/src/" label="DEMO" />
             </div>
         </div>
         <div class="w-1/3 flex flex-col  text-left bg-black rounded-lg box-shadow" :class="{'flex-col w-full p-2': $mq === 'mo' , 'mx-16 p-8': $mq === 'de'}">
-            <p class="flex items-center p-2  text-sa-yellow font-bold" :class="{'text-2xl': $mq === 'de'}">Greener <span class="material-icons px-4">
+            <p class="flex items-center pb-4 text-sa-yellow font-bold" :class="{'text-2xl': $mq === 'de'}">Greener <span class="material-icons px-4">
                 face
                 </span>
             </p>
-            <img src="../assets/greener.png" alt="">
-            <p class="text-secondary pt-8 text-center">Red social sobre nutrición y salud "Greener". Desarrollada con vanilla JS y Firebase.</p>
+            <img v-if="$mq==='de'" src="../assets/greener.png" alt="">
+            <p v-if="$mq==='de'" class="text-secondary pt-8 text-center">Red social sobre nutrición y salud "Greener". Desarrollada con vanilla JS y Firebase.</p>
              <div class="flex text-primary pt-8 justify-center">
                 <BioButton href="https://github.com/DianaCarrillo/cdmx-social-network-frameworks" label="CODE" />
                 <BioButton href="https://dianacarrillo.github.io/cdmx-social-network-frameworks/" label="DEMO" />
             </div>
         </div>
                 <div class="w-1/3 flex flex-col  text-left bg-black rounded-lg box-shadow" :class="{'flex-col w-full p-2': $mq === 'mo' , 'ml-16 p-8': $mq === 'de'}">
-            <p class="flex items-center p-2  text-sa-yellow font-bold" :class="{'text-2xl': $mq === 'de'}">Foodmap  <span class="material-icons px-4">
+            <p class="flex items-center pb-4 text-sa-yellow font-bold" :class="{'text-2xl': $mq === 'de'}">Foodmap  <span class="material-icons px-4">
                 place
                 </span>
             </p >
-            <img src="../assets/foodmap.png" alt="">
-            <p class="text-secondary pt-8 text-center"> Buscador de restaurantes consumiendo Google Maps API. Desarrollado con with vanilla JS.</p>
+            <img v-if="$mq==='de'" src="../assets/foodmap.png" alt="">
+            <p v-if="$mq==='de'" class="text-secondary pt-8 text-center"> Buscador de restaurantes consumiendo Google Maps API. Desarrollado con with vanilla JS.</p>
             <div class="flex text-primary pt-8 justify-center">
                 <BioButton href="https://github.com/DianaCarrillo/cdmx-2018-06-bc-core-pm-foodmap" label="DEMO" />
                 <BioButton href="https://dianacarrillo.github.io/cdmx-2018-06-bc-core-pm-foodmap/src/views/view1.html" label="CODE" />

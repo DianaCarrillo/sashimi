@@ -17,8 +17,8 @@ export default {
 </script>
 
 <template>
-    <nav v-if="$mq === 'de'" class="flex w-full p-2 text-lg px-8 fixed bg-black z-10 items-center">
-    <router-link    class="px-4 text-sa-yellow font-bold sashimi" to="/">sashimi</router-link>  
+    <nav  class="flex w-full p-2 text-lg px-2 fixed bg-black z-10 items-center" :class="{'px-8': $mq==='de'}">
+    <router-link  class="px-4 text-sa-yellow font-bold sashimi" to="/">sashimi</router-link>  
       
       <div class="ml-auto text-primary flex" >
                 <BioButton href="https://drive.google.com/file/d/1FraRYkixphpWpPttBiAUUMA6HnBzgDoG/view?usp=sharing" label="Ir a mi C.V" />

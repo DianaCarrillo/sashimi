@@ -1,6 +1,5 @@
 <template>
-    <section :class="{' justify-center items-center text-6xl ': $mq === 'de'}" class=" text-4xl flex flex-col flex-grow  bg-black h-screen text-primary p-4" >
-  
+    <section :class="{' justify-center items-center text-6xl ': $mq === 'de', 'justify-end': $mq === 'mo'}" class=" text-4xl flex flex-col flex-grow  bg-black h-screen text-primary p-4" >
         <h1 class="text-sa-yellow font-bold zoom">sashimi</h1>
         <p class=" text-4xl">Front-end developer</p>
     </section>

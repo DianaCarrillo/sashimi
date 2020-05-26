@@ -8,6 +8,7 @@ import Skills from "../views/Skills.vue";
 import Contact from "./Contact.vue";
 import Description from "../views/Description.vue";
 import Projects from "../views/Projects.vue";
+import Footer from "../views/Footer.vue";
 
     export default {
         name: "Home",
@@ -31,6 +32,7 @@ import Projects from "../views/Projects.vue";
           Hi,
           Skills,
           Projects,
+          Footer,
         }
     }
 </script>
@@ -46,6 +48,7 @@ import Projects from "../views/Projects.vue";
    <Skills/>
    <Projects/>
    <Contact />
+   <Footer />
   </div>
 <!-- </div> -->
 
