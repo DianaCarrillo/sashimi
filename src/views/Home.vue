@@ -1,8 +1,4 @@
 <script>
-// import BioButton from "../components/BioButton.vue";
-// import Psychologist from "./interests/Psychologist.vue";
-// import Developer from "./interests/Developer.vue";
-// import Feminist from "./interests/Feminist.vue";
 import Hi from "./interests/Hi.vue";
 import Skills from "../views/Skills.vue";
 import Contact from "./Contact.vue";
@@ -14,21 +10,12 @@ import Footer from "../views/Footer.vue";
         name: "Home",
         data(){
           return{
-          // psychologist: false,
-          // developer: false,
-          // feminist: false,
-          // catlover: false,
-          // hover: false,
+
           }
         },
         components: {
           Description,
           Contact,
-          // BioButton,
-          // Mountains,
-          // Psychologist,
-          // Developer,
-          // Feminist,
           Hi,
           Skills,
           Projects,
@@ -41,9 +28,6 @@ import Footer from "../views/Footer.vue";
 <div class="  horizontal-scroll-wrapper">
   <!-- <div :class="{'flex-col': mq === 'mo'}" class="flex justify-between"> -->
    <Description />
-   <!-- <Developer /> -->
-  <!-- <Feminist /> -->
-   <!-- <Psychologist/> -->
    <Hi/>
    <Skills/>
    <Projects/>
@@ -58,12 +42,4 @@ import Footer from "../views/Footer.vue";
 .sa-font{
   font-size:300px;
 }
-/* horizontal-scroll-wrapper {
-  width: 100px;
-  height: 300px;
-  overflow-y: auto;
-  overflow-x: hidden;
-    transform: rotate(-90deg);
-  transform-origin: right top;
-} */
 </style>

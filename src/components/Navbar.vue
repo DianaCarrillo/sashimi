@@ -21,7 +21,7 @@ export default {
     <router-link  class="px-4 text-sa-yellow font-bold sashimi" to="/">sashimi</router-link>  
       
       <div class="ml-auto text-primary flex" >
-                <BioButton href="https://drive.google.com/file/d/1FraRYkixphpWpPttBiAUUMA6HnBzgDoG/view?usp=sharing" label="Ir a mi C.V" />
+                <BioButton href="https://drive.google.com/file/d/1FraRYkixphpWpPttBiAUUMA6HnBzgDoG/view?usp=sharing" label="Ir a mi C.V." />
           <!-- <router-link  class="px-2 hover:text-sa-yellow flex items-center" to="/about">
             <span class="material-icons" >sentiment_satisfied_alt</span>
           </router-link>
@@ -31,6 +31,7 @@ export default {
           <router-link  class="px-2 hover:text-sa-yellow flex items-center" to="/contact">
             <span class="material-icons" >alternate_email</span>
           </router-link> -->
+          <!-- lets deploy -->
       </div>
     </nav>
 </template>
@@ -43,16 +44,4 @@ export default {
   transition: 200ms ease;
   font-size: 105%;
 }
-// #nav {
-//   padding: 30px;
-
-//   a {
-//     font-weight: bold;
-//     color: #2c3e50;
-
-//     &.router-link-exact-active {
-//       color: #42b983;
-//     }
-//   }
-// }
 </style>

@@ -1,6 +1,6 @@
 <template>
     <div class="flex items-center justify-center h-screen p-8  bg-sa-yellow" :class="{'flex-col text-lg justify-between': $mq === 'mo', 'text-lg': $mq === 'de'}">
-        <div class="w-1/3 flex flex-col bg-black text-left  rounded-lg box-shadow" :class="{'flex-col w-full m-0 mb-8 p-2': $mq === 'mo' , 'mr-16 p-8': $mq === 'de'}">
+        <div class="w-1/3 flex flex-col bg-black text-left  rounded-lg box-shadow" :class="{'flex-col w-full m-0  p-2': $mq === 'mo' , 'mr-16 p-8': $mq === 'de'}">
             <p class="flex items-center pb-4  text-sa-yellow font-bold" :class="{'text-2xl': $mq === 'de'}" >Registro de visitantes <span class="material-icons px-4">
                recent_actors
                 </span>

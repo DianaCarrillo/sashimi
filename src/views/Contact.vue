@@ -21,7 +21,7 @@
             return{
              links:[
                    {
-                        href: "https://github.com/DianaCarrillo/DianaCarrillo.github.io",
+                        href: "https://github.com/DianaCarrillo/",
                         linkString: 'DianaCarrillo.github.io',
                         site:'Github'
                     },
