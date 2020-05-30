@@ -26,7 +26,7 @@
                  <li>Trabajo en equipo</li>
                  <li>Liderazgo</li>
                  <li>Escucha</li>
-                 <li>Observasión</li>
+                 <li>Observación</li>
                  <li>Creatividad</li>
             </ul>
         </div>
