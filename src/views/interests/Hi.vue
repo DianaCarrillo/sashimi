@@ -2,7 +2,7 @@
     <div class=" flex flex-col justify-center flex-grow text-xl  h-screen bg-black cover bg-img"  >
      <div class="flex ">
       <section class="flex flex-col justify-center bg-opacity p-4" :class="{'flex-col w-full ': $mq === 'mo', 'p-8 ': $mq === 'de' }">
-      <p class="text-left  font-bold text-sa-yellow" :class="{'text-2xl p-8': $mq === 'de', 'pb-2': $mq === 'mo'}">Sobre mí</p>
+      <p class="text-left  font-bold text-sa-yellow" :class="{'text-2xl p-8': $mq === 'de', 'pb-4': $mq === 'mo'}">Sobre mí</p>
       <div class="flex items-center justify-center text-lg" :class="{'flex-col w-full': $mq === 'mo'}">
        <div class=" flex flex-col w-1/2  items-center justify-center pr-8" v-if="$mq === 'de'">
          <p class=" text-secondary  pb-8">Soy Programadora Front-end y licenciada en Psicología Social. Mi camino como dev comenzó en Laboratoria donde aprendí a trabajar con JavaScript, node, CSS, Firebase, APIs y conceptos básicos de UX. Además de haber aprendido tanto: ¡una de las mejores experiencias de mi vida! </p>         
