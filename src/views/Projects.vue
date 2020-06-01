@@ -1,15 +1,15 @@
 <template>
     <div class="flex items-center justify-center h-screen p-8  bg-sa-yellow" :class="{'flex-col text-lg justify-between': $mq === 'mo', 'text-lg': $mq === 'de'}">
         <div class="w-1/3 flex flex-col bg-black text-left  rounded-lg box-shadow" :class="{'flex-col w-full m-0  p-2': $mq === 'mo' , 'mr-8 p-8': $mq === 'de'}">
-            <p class="flex items-center pb-4  text-sa-yellow font-bold" :class="{'text-2xl': $mq === 'de'}" >Terminal<span class="material-icons px-4">
+            <p class="flex items-center pb-4  text-sa-yellow font-bold" :class="{'text-2xl': $mq === 'de'}" >Social Media Dashboard<span class="material-icons px-4">
                recent_actors
                 </span>
             </p>
-            <img v-if="$mq==='de'" src="../assets/terminal1.png" alt="">
-            <p v-if="$mq==='de'" class="text-secondary pt-8 text-center box">Registro de vistantes. Desarrollado con vanilla JS, Cloud Firestore and Formspree.</p>
+            <img v-if="$mq==='de'" src="../assets/light-demo(2).png" alt="">
+            <p v-if="$mq==='de'" class="text-secondary pt-8 text-center box"> Dashboard de redes sociales en light y dark mode. Maquetado responsive con CSS y JS.</p>
             <div class="flex text-primary pt-8 justify-center">
-                <BioButton href="https://github.com/DianaCarrillo/cdmx-2018-06-am-bc-registro-de-visitantes" label="CODE" />
-                <BioButton href="https://dianacarrillo.github.io/cdmx-2018-06-am-bc-registro-de-visitantes/src/" label="DEMO" />
+                <BioButton href="https://github.com/DianaCarrillo/dark-mode-demo" label="CODE" />
+                <BioButton href="https://dianacarrillo.github.io/dark-mode-demo/" label="DEMO" />
             </div>
         </div>
         <div class="w-1/3 flex flex-col  text-left bg-black rounded-lg box-shadow" :class="{'flex-col w-full p-2': $mq === 'mo' , 'mx-8 p-8': $mq === 'de'}">
