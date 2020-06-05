@@ -34,30 +34,31 @@
 </template>
 
 <script>
-    export default {
-        data(){
-            return{
-                showTech: false,
-                showSoft: false,
-            }
-        }
-    }
+export default {
+  data() {
+    return {
+      showTech: false,
+      showSoft: falses
+    };
+  }
+};
 </script>
 
 <style lang="scss" scoped>
-.bg-color{
-      background: rgba(25, 25, 25, .5);
+.bg-color {
+  background: rgba(25, 25, 25, 0.5);
 }
 
-.fade-enter-active, .fade-leave-active {
-  transition: opacity .5s;
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
 }
 .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
   opacity: 0;
 }
-.box-shadow{
--webkit-box-shadow: 0px 23px 45px -9px rgba(0,0,0,0.75);
--moz-box-shadow: 0px 23px 45px -9px rgba(0,0,0,0.75);
-box-shadow: 0px 23px 45px -9px rgba(0,0,0,0.75);
+.box-shadow {
+  -webkit-box-shadow: 0px 23px 45px -9px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 23px 45px -9px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 23px 45px -9px rgba(0, 0, 0, 0.75);
 }
 </style>

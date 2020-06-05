@@ -1,19 +1,19 @@
 <script>
-import BioButton from '../components/BioButton'
+import BioButton from "../components/BioButton";
 
 export default {
-  name: 'Navbar',
+  name: "Navbar",
   data() {
     return {
       contact: false,
       email: false,
-      about: false,      
+      about: false
     };
   },
-  components:{
-    BioButton,
+  components: {
+    BioButton
   }
-}
+};
 </script>
 
 <template>
@@ -37,10 +37,10 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-.sashimi{
+.sashimi {
   transition: 200ms ease;
 }
-.sashimi:hover{
+.sashimi:hover {
   transition: 200ms ease;
   font-size: 105%;
 }

@@ -27,27 +27,27 @@
 
 <script>
 // import Skills from '../Skills';
-    export default {
-        components:{
-            // Skills
-        }
-    }
+export default {
+  components: {
+    // Skills
+  }
+};
 </script>
 
 <style lang="scss" scoped>
 img {
-//  box-shadow: 8px 8px 50px  #eefa00;
+  //  box-shadow: 8px 8px 50px  #eefa00;
 }
-.bg-img{
-    background-image: url('../../assets/nightoax.jpg');
-    background-size: cover;
+.bg-img {
+  background-image: url("../../assets/nightoax.jpg");
+  background-size: cover;
 }
 
-.bg-opacity{
-  background: rgba(25, 25, 25, .8);
+.bg-opacity {
+  background: rgba(25, 25, 25, 0.8);
 }
-a:hover{
-    color: #ff0080;
+a:hover {
+  color: #ff0080;
 }
 // .sashimi{
 
@@ -61,7 +61,7 @@ a:hover{
 //   from {
 //     text-shadow: 0 0 10px #1d00ff, 0 0 20px #1d00ff, 0 0 30px #1d00ff, 0 0 40px #1d00ff, 0 0 50px #1d00ff, 0 0 60px #1d00ff, 0 0 70px #1d00ff;
 //   }
-  
+
 //   to {
 //     text-shadow: 0 0 5px #1d00ff, 0 0 10px #1d00ff, 0 0 10px #1d00ff, 0 0 10px #1d00ff, 0 0 10px #1d00ff, 0 0 10px #1d00ff, 0 0 10px #1d00ff;
 //   }

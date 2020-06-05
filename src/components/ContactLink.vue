@@ -1,21 +1,21 @@
 <script>
-    export default {
-     name: 'ContactLink', 
-     props: {
-         href:{
-             type: String,
-             required: true
-         },
-         linkString:{
-             type: String,
-             required: true
-         },
-         site:{
-             type: String,
-             required: true
-         }
-     }
+export default {
+  name: "ContactLink",
+  props: {
+    href: {
+      type: String,
+      required: true
+    },
+    linkString: {
+      type: String,
+      required: true
+    },
+    site: {
+      type: String,
+      required: true
     }
+  }
+};
 </script>
 <template>
     <div class="pb-8">
@@ -24,5 +24,4 @@
     </div>
 </template>
 <style lang="scss" scoped>
-
 </style>

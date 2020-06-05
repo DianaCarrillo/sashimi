@@ -14,42 +14,44 @@
 </template>
 
 <script>
-    import ContactLink from "../components/ContactLink.vue";
-    export default {
-        name: 'Contact',
-        data(){
-            return{
-             links:[
-                   {
-                        href: "https://github.com/DianaCarrillo/",
-                        linkString: 'DianaCarrillo.github.io',
-                        site:'Github'
-                    },
-                    {
-                        href: "mailto:carrillorivera.diana@gmail.com",
-                        linkString: 'carrillorivera.diana@gmail.com',
-                        site:'Correo'
-                    },
-                    {
-                        href: "https://www.linkedin.com/in/diana-carrillo-rivera/",
-                        linkString: 'diana-carrillo-rivera',
-                        site:'LinkedIn'
-                        }
-         ]   
-          }
+import ContactLink from "../components/ContactLink.vue";
+export default {
+  name: "Contact",
+  data() {
+    return {
+      links: [
+        {
+          href: "https://github.com/DianaCarrillo/",
+          linkString: "DianaCarrillo.github.io",
+          site: "Github"
         },
-        components:{
-            ContactLink
+        {
+          href: "mailto:carrillorivera.diana@gmail.com",
+          linkString: "carrillorivera.diana@gmail.com",
+          site: "Correo"
         },
-    }
+        {
+          href: "https://www.linkedin.com/in/diana-carrillo-rivera/",
+          linkString: "diana-carrillo-rivera",
+          site: "LinkedIn"
+        }
+      ]
+    };
+  },
+  components: {
+    ContactLink
+  }
+};
 </script>
 
 <style lang="scss" scoped>
-.zoom-hover{
-  transition: all 500ms ease-in-out ;
+.zoom-hover {
+  transition: all 500ms ease-in-out;
 }
 .zoom-hover:hover {
-  transition: all 500ms ease-in-out ;
-  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  transition: all 500ms ease-in-out;
+  transform: scale(
+    1.5
+  ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 </style>

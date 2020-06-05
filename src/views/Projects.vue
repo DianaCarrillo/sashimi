@@ -41,23 +41,23 @@
 </template>
 
 <script>
-import BioButton from '../components/BioButton'
-    export default {
-        data(){
-            return{
-                showTech: false,
-                showSoft: false,
-            }
-        },
-        components:{
-            BioButton,
-        }
-    }
+import BioButton from "../components/BioButton";
+export default {
+  data() {
+    return {
+      showTech: false,
+      showSoft: false
+    };
+  },
+  components: {
+    BioButton
+  }
+};
 </script>
 
 <style lang="scss" scoped>
-.box{
-    height: 100px
+.box {
+  height: 100px;
 }
 // .bg-color{
 //       background: rgba(25, 25, 25, .5);
@@ -69,9 +69,9 @@ import BioButton from '../components/BioButton'
 // .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
 //   opacity: 0;
 // }
-.box-shadow{
--webkit-box-shadow: 0px 23px 45px -9px rgba(0,0,0,0.75);
--moz-box-shadow: 0px 23px 45px -9px rgba(0,0,0,0.75);
-box-shadow: 0px 23px 45px -9px rgba(0,0,0,0.75);
+.box-shadow {
+  -webkit-box-shadow: 0px 23px 45px -9px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 23px 45px -9px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 23px 45px -9px rgba(0, 0, 0, 0.75);
 }
 </style>

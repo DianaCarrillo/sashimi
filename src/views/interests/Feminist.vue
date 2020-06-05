@@ -10,14 +10,12 @@
 </template>
 
 <script>
-    export default {
-        
-    }
+export default {};
 </script>
 
 <style lang="scss" scoped>
-.feminism{
-  filter: grayscale(100%)
+.feminism {
+  filter: grayscale(100%);
   /* background-image: url(../assets/IMG_20200308_170320_BURST20.jpg) */
 }
 </style>
