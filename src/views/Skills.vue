@@ -38,7 +38,7 @@ export default {
   data() {
     return {
       showTech: false,
-      showSoft: falses
+      showSoft: false
     };
   }
 };

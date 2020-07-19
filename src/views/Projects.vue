@@ -25,17 +25,16 @@
             </div>
         </div>
                 <div class="w-1/3 flex flex-col  text-left bg-black rounded-lg box-shadow" :class="{'flex-col w-full p-2': $mq === 'mo' , 'ml-8 p-8': $mq === 'de'}">
-            <p class="flex items-center pb-4 text-sa-yellow font-bold" :class="{'text-2xl': $mq === 'de'}">Foodmap  <span class="material-icons px-4">
-                place
+            <p class="flex items-center pb-4 text-sa-yellow font-bold" :class="{'text-2xl': $mq === 'de'}">Search Engine GIFs<span class="material-icons px-4">
+                search
                 </span>
             </p >
-            <img v-if="$mq==='de'" src="../assets/foodmap.png" alt="">
-            <p v-if="$mq==='de'" class="text-secondary pt-8 text-center box"> Buscador de restaurantes consumiendo Google Maps API. Desarrollado con with vanilla JS.</p>
+            <img v-if="$mq==='de'" src="../assets/gifs-app-img.png" alt="">
+            <p v-if="$mq==='de'" class="text-secondary pt-8 text-center box"> Buscador de GIFs desarrollado con vue.js</p>
             <div class="flex text-primary pt-8 justify-center">
-                <BioButton href="https://github.com/DianaCarrillo/cdmx-2018-06-bc-core-pm-foodmap" label="CODE" />
-                <BioButton href="https://dianacarrillo.github.io/cdmx-2018-06-bc-core-pm-foodmap/src/views/view1.html" label="DEMO" />
+                <BioButton href="https://github.com/DianaCarrillo/prueba" label="CODE" />
+                <BioButton href="https://dianacarrillo.github.io/prueba" label="DEMO" />
             </div>
-        
         </div>
     </div>
 </template>
