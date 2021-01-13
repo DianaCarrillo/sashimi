@@ -5,13 +5,14 @@
                 code
                 </span>
             </P>
-            <ul class="text-secondary text-center p-4  " >
+            <ul class="text-secondary text-center p-4 grid grid-cols-2 " >
                 <li>JavaScript</li>
-                <li>HTML</li>
-                <li>CSS </li>
                 <li>Vue</li>
-                <li>Tailwind</li>
+                <li>HTML</li>
+                <li>Nuxt</li>
+                <li>CSS </li>
                 <li>Storybook</li>
+                <li>Tailwind</li>
                 <li>Sendgrid</li>
             </ul>
         </div>
@@ -20,7 +21,7 @@
                 people
                 </span>
             </P>
-            <ul class="text-secondary text-center p-4" >
+            <ul class="text-secondary text-center p-4 grid grid-cols-2 " >
                 <li>Metodología Agile</li>
                  <li>Acertividad</li>
                  <li>Trabajo en equipo</li>
